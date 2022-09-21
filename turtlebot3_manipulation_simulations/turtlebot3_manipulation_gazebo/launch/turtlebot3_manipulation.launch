@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="model" default="$(env TURTLEBOT3_MODEL)" doc="model type [waffle, waffle_pi]"/>
+  <arg name="gui" default="true"/>
+  <arg name="paused" default="true"/>
+  <arg name="use_sim_time" default="true"/>
+
+  <rosparam file="$(find turtlebot3_manipulation_gazebo)/config/gazebo_controller.yaml" command="load"/>
+
+  <!-- startup simulated world -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="paused" value="$(arg paused)"/>
+    <arg name="gui" value="$(arg gui)"/>
+    <arg name="use_sim_time" value="$(arg use_sim_time)"/>
+  </include>
+
+  <!-- send robot urdf to param server -->
+  <include file="$(find turtlebot3_manipulation_description)/launch/turtlebot3_manipulation_upload.launch">
+    <arg name="model" value="$(arg model)"/>
+  </include>
+
+  <!-- push robot_description to factory and spawn robot in gazebo -->
+  <node name="spawn_gazebo_model" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
+    args="-urdf -param robot_description -model robot -x 0.0 -y 0.0 -Y 0.0 -J joint1 0.0 -J joint2 0.0 -J joint3 0.0 -J joint4 0.0 -J gripper 0.0 -J gripper_sub 0.0"/>
+
+  <!-- controller utils -->
+  <include file="$(find turtlebot3_manipulation_gazebo)/launch/controller_utils.launch"/>
+  
+  <!-- arm controller -->
+  <rosparam file="$(find turtlebot3_manipulation_gazebo)/config/arm_controller.yaml" command="load"/>
+  <node name="arm_controller_spawner" pkg="controller_manager" type="controller_manager" respawn="false" output="screen" args="spawn arm_controller"/>
+
+  <!-- gripper controller -->
+  <rosparam file="$(find turtlebot3_manipulation_gazebo)/config/gripper_controller.yaml" command="load"/>
+  <node name="gripper_controller_spawner" pkg="controller_manager" type="controller_manager" respawn="false" output="screen" args="spawn gripper_controller"/>
+
+</launch>
