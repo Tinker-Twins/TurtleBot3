@@ -1,4 +1,3 @@
-<?xml version='1.0'?>
 <sdf version='1.6'>
   <model name='turtlebot3_house'>
     <link name='Wall_101'>
@@ -5396,7 +5395,7 @@
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>model:///table_marble/meshes/table_lightmap.dae</uri>
+              <uri>model://table_marble/meshes/table_lightmap.dae</uri>
               <scale>0.25 0.25 0.25</scale>
             </mesh>
           </geometry>

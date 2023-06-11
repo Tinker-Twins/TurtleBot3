@@ -2,12 +2,14 @@
 <img src="https://github.com/ROBOTIS-GIT/emanual/blob/master/assets/images/platform/turtlebot3/logo_turtlebot3.png" width="300">
 
 [![kinetic-devel Status](https://github.com/ROBOTIS-GIT/turtlebot3_simulations/workflows/kinetic-devel/badge.svg)](https://github.com/ROBOTIS-GIT/turtlebot3_simulations/tree/kinetic-devel)
+
 [![melodic-devel Status](https://github.com/ROBOTIS-GIT/turtlebot3_simulations/workflows/melodic-devel/badge.svg)](https://github.com/ROBOTIS-GIT/turtlebot3_simulations/tree/melodic-devel)
+
 [![noetic-devel Status](https://github.com/ROBOTIS-GIT/turtlebot3_simulations/workflows/noetic-devel/badge.svg)](https://github.com/ROBOTIS-GIT/turtlebot3_simulations/tree/noetic-devel)
 
 [![dashing-devel Status](https://github.com/ROBOTIS-GIT/turtlebot3_simulations/workflows/dashing-devel/badge.svg)](https://github.com/ROBOTIS-GIT/turtlebot3_simulations/tree/dashing-devel)
+
 [![foxy-devel Status](https://github.com/ROBOTIS-GIT/turtlebot3_simulations/workflows/foxy-devel/badge.svg)](https://github.com/ROBOTIS-GIT/turtlebot3_simulations/tree/foxy-devel)
-[![galactic-devel Status](https://github.com/ROBOTIS-GIT/turtlebot3_simulations/workflows/galactic-devel/badge.svg)](https://github.com/ROBOTIS-GIT/turtlebot3_simulations/tree/galactic-devel)
 
 ## ROBOTIS e-Manual for TurtleBot3
 - [ROBOTIS e-Manual for TurtleBot3](http://turtlebot3.robotis.com/)
@@ -26,13 +28,13 @@
 - [turtlebot3_autorace](https://github.com/ROBOTIS-GIT/turtlebot3_autorace)
 - [turtlebot3_deliver](https://github.com/ROBOTIS-GIT/turtlebot3_deliver)
 - [hls_lfcd_lds_driver](https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver)
-- [turtlebot3_manipulation](https://github.com/ROBOTIS-GIT/turtlebot3_manipulation.git)
-- [turtlebot3_manipulation_simulations](https://github.com/ROBOTIS-GIT/turtlebot3_manipulation_simulations.git)
-- [robotis_manipulator](https://github.com/ROBOTIS-GIT/robotis_manipulator)
 - [open_manipulator_msgs](https://github.com/ROBOTIS-GIT/open_manipulator_msgs)
 - [open_manipulator](https://github.com/ROBOTIS-GIT/open_manipulator)
 - [open_manipulator_simulations](https://github.com/ROBOTIS-GIT/open_manipulator_simulations)
 - [open_manipulator_perceptions](https://github.com/ROBOTIS-GIT/open_manipulator_perceptions)
+- [open_manipulator_with_tb3_msgs](https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3_msgs)
+- [open_manipulator_with_tb3](https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3)
+- [open_manipulator_with_tb3_simulations](https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3_simulations)
 - [dynamixel_sdk](https://github.com/ROBOTIS-GIT/DynamixelSDK)
 - [OpenCR-Hardware](https://github.com/ROBOTIS-GIT/OpenCR-Hardware)
 - [OpenCR](https://github.com/ROBOTIS-GIT/OpenCR)

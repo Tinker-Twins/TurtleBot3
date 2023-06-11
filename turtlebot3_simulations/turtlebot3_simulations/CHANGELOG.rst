@@ -2,27 +2,61 @@
 Changelog for package turtlebot3_simulations
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1.3.2 (2021-07-13)
+2.2.3 (2021-04-12)
 ------------------
-* update catkin minimum requirement
-* fix bugs
-* Contributors: Kerui, Elvis Dowson, Will Son
+* Update required keyword arguments
+* Clear up exec_depend
+* Fix Waffle Pi wheel inertia
+* Contributors: ruffsl, Will Son
 
-1.3.1 (2021-01-07)
+2.2.2 (2021-02-24)
 ------------------
-* fix init() in turtlebot3_drive.cpp
-* Apply low poly models
-* Noetic release
-* Contributors: Sean Yen, Will Son
+* Remove shared objects built in older version
+* Contributors: Will Son
 
-1.3.0 (2020-09-29)
+2.2.1 (2021-01-13)
 ------------------
-* fix ROS Assert issue when debugging (#124)
-* added TurtleBot3 Autorace 2020 (#108)
-* added turtlebot3_description to dependency list (#104)
-* removed *nix path separator (#92)
-* removed unnecessary gazebo plugin_path (#78)
-* Contributors: Sean Yen, Ashe Kim, Mikael Arguedas, Ben Wolsieffer
+* Eloquent Elusor EOL
+* Add missing imu joint in sdf
+* Append Gazebo model path
+* Portable fix, launch description revise
+* Ament lint applied
+* Contributors: minwoominwoominwoo7, Rayman, seanyen, ashe kim, Will Son
+
+2.2.0 (2020-06-29)
+------------------
+* TurtleBot3 Drive node implementation
+* Additional Gazebo maps added
+* argument tags in the sdf file replaced with remapping tags
+* Low polygon 3D modeling applied for simulation
+* Contributors: Ryan Shim, Mikael Arguedas, Will Son
+
+2.1.0 (2019-09-10)
+------------------
+* ROS 2 migration of turtlebot3_fake_node package
+* Modified rviz config (background colour changed to white, tf display disabled)
+* Added turtlebot3_house and related world, model files
+* Contributors: Ryan Shim, Darby Lim, Pyo
+
+2.0.1 (2019-09-05)
+------------------
+* Modified dependency packages
+* Modified launch directory
+* Added a launch file for robot state publisher
+* Contributors: Darby Lim, Pyo
+
+2.0.0 (2019-08-20)
+------------------
+* Supported ROS 2 Dashing Diademata
+* Updated the CHANGELOG and version to release binary packages
+* Contributors: Darby Lim, Pyo
+
+1.3.0 (2020-06-29)
+------------------
+* Turtlebot3 Autorace 2020 implemented
+* Remove the plugin_path from gazebo_ros export
+* Remove *nix path separator
+* Contributors: Ashe Kim, Ben Wolsieffer, Sean Yen
 
 1.2.0 (2019-01-22)
 ------------------
